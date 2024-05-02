@@ -1,0 +1,98 @@
+<mxfile host="Electron" modified="2024-05-01T09:58:45.281Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="mcXAs5flBbjH8RIpF8Jg" version="24.2.5" type="device">
+  <diagram name="Page-1" id="FkTenAJskpMP2S2fhcY0">
+    <mxGraphModel dx="896" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-16" value="&lt;h1&gt;&lt;font face=&quot;Noto Sans&quot;&gt;NCKUPP-personal&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="I0Z3Zn0I9RhY797ahK46-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="648" as="sourcePoint" />
+            <mxPoint x="260" y="588" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="618" />
+              <mxPoint x="260" y="618" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-18" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;PostgreSQL&lt;div&gt;Main DB&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="638" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-20" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;PostgreSQL&lt;div&gt;backup DB&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="638" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I0Z3Zn0I9RhY797ahK46-21" target="I0Z3Zn0I9RhY797ahK46-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-21" value="pgpool2" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="170" y="528" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-27" value="" style="endArrow=none;html=1;rounded=0;exitX=0.478;exitY=-0.015;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="I0Z3Zn0I9RhY797ahK46-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="628" as="sourcePoint" />
+            <mxPoint x="260" y="618" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="356" y="618" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-29" value="Read Write Seperate Queries" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="588" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I0Z3Zn0I9RhY797ahK46-31" target="I0Z3Zn0I9RhY797ahK46-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-31" value="Backend" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="190" y="338" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-54" value="Properties" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="305" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-55" value="Framework: Spring Boot" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-54">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-56" value="Language: Kotlin" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-54">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-57" value="Port: 8080" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-54">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-62" value="using port 5433" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="458" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-63" value="default port 5432" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="588" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-65" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.001;entryY=1.071;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="I0Z3Zn0I9RhY797ahK46-31" target="I0Z3Zn0I9RhY797ahK46-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="408" as="sourcePoint" />
+            <mxPoint x="410" y="363" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-67" value="Frontend" style="whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="148" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-69" value="Properties" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="120" width="160" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-70" value="Framework: Vaadin Kotlin" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-69">
+          <mxGeometry y="26" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-71" value="Language: Kotlin" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-69">
+          <mxGeometry y="56" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-72" value="Port: 80" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=1;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="I0Z3Zn0I9RhY797ahK46-69">
+          <mxGeometry y="86" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I0Z3Zn0I9RhY797ahK46-73" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.001;entryY=1.071;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="I0Z3Zn0I9RhY797ahK46-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="178" as="sourcePoint" />
+            <mxPoint x="400" y="178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
