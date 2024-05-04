@@ -1,3 +1,4 @@
+
 package com.potato.nckuppp
 
 import org.springframework.boot.autoconfigure.SpringBootApplication

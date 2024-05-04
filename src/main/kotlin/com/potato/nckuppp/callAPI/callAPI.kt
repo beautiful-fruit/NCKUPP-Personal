@@ -1,4 +1,4 @@
-package com.potato.nckuppp
+package com.potato.nckuppp.callAPI
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -8,19 +8,8 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 import okhttp3.Response
-import okhttp3.ResponseBody
 import retrofit2.http.GET
-
-
-//{
-//	"success": boolean
-//	"data": {}|null
-//	"msg": string
-//	"code": int
-//	"err": [string]
-//	"warn": [string]
-//}
-
+import retrofit2.http.QueryMap
 
 
 data class Course (@JsonProperty("y") val y: String, @JsonProperty("dn") val dn: String,
@@ -68,24 +57,28 @@ object RequestInterceptor : Interceptor {
 
 interface SearchAPI {
 	@GET("historySearch")
-	fun getSearch(): Call<CourseSearchResponse>
+	fun getSearch(@QueryMap map: Map<String, String>): Call<CourseSearchResponse>
+}
+
+fun getCourseResult(query: Map<String, String>) : CourseSearchResponse? {
+	val retrofit = RetrofitClient.getClient()
+	val userAPI = retrofit.create(SearchAPI::class.java)
+
+	val res = userAPI.getSearch(query).execute()
+
+	return res.body() ?: res.errorBody().let {
+		it?.let { notNullErrorBody ->
+			ObjectMapper().readValue(
+				notNullErrorBody.string(),
+				CourseSearchResponse::class.java)
+		}
+	}
 }
 
 
-
-
 fun main() {
-	val retrofit = RetrofitClient.getClient()
-	val userAPI = retrofit.create(SearchAPI::class.java)
-	val res = userAPI.getSearch().execute()
-
-	val errorBody: ResponseBody? = res.errorBody()
-	val mapper = ObjectMapper()
-
-	val mappedBody: CourseSearchResponse? = errorBody?.let { notNullErrorBody ->
-		mapper.readValue(notNullErrorBody.toString(), CourseSearchResponse::class.java)
-	}
-	println(mappedBody)
+	val query = mapOf<String, String>("dept" to "F7")
+	println(getCourseResult(query))
 }
 
 

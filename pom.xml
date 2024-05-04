@@ -29,6 +29,18 @@
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-spring-boot-starter</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/eu.vaadinonkotlin/vok-framework -->
+		<dependency>
+			<groupId>eu.vaadinonkotlin</groupId>
+			<artifactId>vok-framework</artifactId>
+			<version>0.17.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.mvysny.karibu-tools/karibu-tools -->
+		<dependency>
+			<groupId>com.github.mvysny.karibu-tools</groupId>
+			<artifactId>karibu-tools</artifactId>
+			<version>0.20</version>
+		</dependency>
 		<dependency>
 			<groupId>org.vaadin.stefan</groupId>
 			<artifactId>fullcalendar2</artifactId>
